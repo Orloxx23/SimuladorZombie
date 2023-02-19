@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/00a734f883.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Simulador zombie</title>
+  </head>
+  <body>
+    <div class="inputs_variables">
+      <!-- Personas -->
+      <div class="form__group field">
+        <input
+          required=""
+          placeholder="Personas"
+          class="form__field"
+          type="number"
+          id="numPersonas"
+          value="100"
+        />
+        <label class="form__label" for="personas">Personas</label>
+      </div>
+
+      <!-- Tiempo de infectados -->
+      <div class="form__group field">
+        <input
+          required=""
+          placeholder="Tiempo de infectado"
+          class="form__field"
+          type="number"
+          id="tiempoInfectado"
+          value="5"
+        />
+        <label class="form__label" for="tiempo">Tiempo de infectado</label>
+      </div>
+
+      <!-- Radio de infeccion -->
+      <div class="form__group field">
+        <input
+          required=""
+          placeholder="Radio de infección"
+          class="form__field"
+          type="number"
+          id="radioInfeccion"
+          value="5"
+        />
+        <label class="form__label" for="radio">Tamaño de personas</label>
+      </div>
+
+      <!-- Radio de busqueda -->
+      <div class="form__group field">
+        <input
+          required=""
+          placeholder="Radio de busqueda"
+          class="form__field"
+          type="number"
+          id="radioBusqueda"
+          value="5"
+        />
+        <label class="form__label" for="radio">Radio de busqueda</label>
+      </div>
+
+      <!-- Velocidad del infectado -->
+      <div class="form__group field">
+        <input
+          required=""
+          placeholder="Velocidad del infectado"
+          class="form__field"
+          type="number"
+          id="velocidadInfectado"
+          value="2"
+        />
+        <label class="form__label" for="radio">Velocidad del infectado</label>
+      </div>
+
+      <button id="reiniciar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+
+      <button id="iniciar">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <i class="fa-solid fa-play"></i>
+      </button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
