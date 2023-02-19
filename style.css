@@ -13,8 +13,24 @@ body {
 }
 
 @media screen and (max-width: 968px) {
-  body {
-    margin: 130px 0;
+  .inputs_variables {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40%;
+  }
+
+  button{
+    width: 100%;
+    max-width: none;
+    min-width: 200px;
+  }
+
+  #canvas {
+    width: 100%;
+    height: 100vh;
+    /* background: red; */
   }
 }
 
