@@ -77,19 +77,6 @@ class Persona {
       this.vy *= -1;
     }
   }
-
-  dibujar() {
-    if (this.estado === "sano") {
-      ctx.fillStyle = "green";
-    } else if (this.estado === "enfermo") {
-      ctx.fillStyle = "red";
-    } else {
-      ctx.fillStyle = "black";
-    }
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.radio, 0, Math.PI * 2);
-    ctx.fill();
-  }
 }
 
 function iniciar() {
@@ -115,7 +102,11 @@ function iniciar() {
       if (persona.estado === "sano") {
         ctx.fillStyle = "white";
       } else if (persona.estado === "enfermo") {
-        ctx.fillStyle = "green";
+        if(persona.tiempo_enfermo < tiempo_vida * fps / 1.1) {
+          ctx.fillStyle = "green";
+        } else {
+            ctx.fillStyle = "#005A26";
+        }
       }
       ctx.fill();
     }

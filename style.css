@@ -12,6 +12,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 968px) {
+  body {
+    margin: 130px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: calc(100%);
+    height: calc(100vh);
+    padding: 40px 0 0 0;
+  }
+}
+
 #canvas {
   width: 100%;
   height: 100%;
